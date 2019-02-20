@@ -1,0 +1,18 @@
+<html>
+<form method="POST" action="configure.php">
+	<p>IP address 		:<input type="text" id="ipAddr" name="ipAddr" required></p>
+	<p>Gateway 		:<input type="text" id="gateway" name="gateway" required></p>
+	<p>Subnet 		:<input type="text" id="subnet" name="subnet" required><br/></p>
+	<!-- <p>DNS nameserver :<input type="text" id="nameserver" name="nameserver" required><br/></p> -->
+	<button type="submit">Apply</button>
+</form>
+<form method="POST" action="restart.php">
+<button type="submit">Restart</button>
+</form>
+
+<form method="POST" action="shutdown.php" onsubmit="return confirm("System will shutdown in 15 seconds , do you wish to continue" target="hole">
+<button type="submit">shutdown</button>
+<iframe id="hole" name="hole" width="0" height="0" style="visibility: hidden;"></iframe>
+</form>
+
+</html>
