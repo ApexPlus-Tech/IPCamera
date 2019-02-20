@@ -19,7 +19,7 @@ else{
 	echo("Internet is down");
 	//showInstall();
 }
-}
+}     
 else{
 	echo "Forbidden access";
 }
