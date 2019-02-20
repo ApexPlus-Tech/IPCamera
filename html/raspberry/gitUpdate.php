@@ -5,7 +5,7 @@ if($result==0){//ping is successful
 	exec("git clone https://github.com/ApexPlus-Tech/NanoPiNeo_ps_and_at.git /var/www/updated",$output,$result);
 	//echo($result);
 	if($result==0){//git cloning is successful
-		exec("cp -TRv /var/www/updated/html /var/www");
+		exec("cp -TRv /var/www/updated /var/www");
 		exec("rm -r --interactive=never /var/www/updated");
 		echo("<script>alert('Firmware update completed')</script>");
 		echo("<script>window.location='index.html'</script>");
