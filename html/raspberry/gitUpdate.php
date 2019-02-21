@@ -8,7 +8,7 @@ if($result==0){//ping is successful
 		exec("cp -TRv /var/www/updated /var/www");
 		exec("rm -r --interactive=never /var/www/updated");
 		echo("<script>alert('Firmware update completed')</script>");
-		echo("<script>window.location='../index.html'</script>");
+		echo("<script>window.location='ipGui.php'</script>");
 	}
 	else{
 		echo("Server is down");
