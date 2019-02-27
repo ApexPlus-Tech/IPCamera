@@ -23,8 +23,8 @@
 		if($actual_password!=$password || $actual_username!=$username)  //if username or password is not correct
 		{
 			echo "<a href='auth.html'>log in</a>";
-			echo "<br>";
-			die ("Wrong password or username.");  //log in again
+			//echo "<br>";
+			//die ("Wrong password or username.");  //log in again
 		}
 		else {
 			echo "Welcome, you are logged in.";  //if usename and password is correct logged in
