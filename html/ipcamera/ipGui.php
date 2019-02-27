@@ -416,7 +416,7 @@
 		
 	<div class="footer1">
 	<strong>ApexPlus Technologies</strong>
-	<br>Software Version 1.0
+	<br>Software Version 1.00
 </div>
 	</body>
 </html>      <!--HAPPY CODING-->
