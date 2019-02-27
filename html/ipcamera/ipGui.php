@@ -283,10 +283,10 @@
 
 
 
-		<button id="set-defaults" onclick="setdefaults()">setdefaults</button>   <!-- this is button element with onclick listener attached.it is to setdefaults() value.in case the user messes up the thing..... -->
+		<button id="set-defaults" onclick="setdefaults()">Setdefaults</button>   <!-- this is button element with onclick listener attached.it is to setdefaults() value.in case the user messes up the thing..... -->
 
 		<form action='restart.php' method='post'> <!--this is just a simple form which takes the control to the restart.php where reboot code gets executed..and server gets rebooted  -->
-			<button>reboot</button>
+			<button>Reboot</button>
 		</form>
 		<script> 
 			
