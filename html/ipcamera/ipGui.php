@@ -8,7 +8,7 @@
 	session_destroy();
 	if($val==1)
 	{
-		echo "your form has been submitted.click on reboot";
+		echo "Your form has been submitted.Click on reboot.";
 		session_unset();
 	}
 	else{
@@ -23,11 +23,11 @@
 		if($actual_password!=$password || $actual_username!=$username)  //if username or password is not correct
 		{
 			echo "<a href='auth.html'>log in</a>";
-			echo "<br";
-			die ("wrong password or username");  //log in again
+			echo "<br>";
+			die ("Wrong password or username.");  //log in again
 		}
 		else {
-			echo "welcome you are logged in";  //if usename and password is correct logged in
+			echo "Welcome you are logged in.";  //if usename and password is correct logged in
 			$password="";   //set password to null
 
 		}
@@ -73,6 +73,13 @@
 			#log-out{
 				position:relative;
 				float:right;
+			}
+			.footer1{
+			position:fixed;
+			text-align:right;
+			bottom:0px;
+			width:100%;
+			/*color:red*/
 			}
 	   </style>
 
@@ -225,10 +232,10 @@
 	</ul>
 		
 		<form action="shutdown.php" method="post">
-		<button >SHUTDOWN</button>
+		<button >Shutdown</button>
 		</form>
 		<form action="gitUpdate.php" method="post">
-		<button >FIRMWARE UPDATE</button>
+		<button >Firmware Update</button>
 		</form>
 		<form action="ip_changer.php" method=post id="form"> <!--this is main form where we get details of camera ,frequency -->
 			<p>No of camera:<input type="number" id="camera" onchange="addFields()" name="camera" min=0 max=6 value=0></p>    <!--input element with number of camera .onchange event listener is attached to it....whenever it changes addfiels() function is called....however min value is 0 and maximumvalue can be 6 -->
@@ -407,6 +414,9 @@
 		</script>
 		
 		
-
+	<div class="footer1">
+	<strong>ApexPlus Technologies</strong>
+	<br>Software Version 1.0
+</div>
 	</body>
 </html>      <!--HAPPY CODING-->
