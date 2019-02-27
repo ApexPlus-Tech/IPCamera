@@ -27,7 +27,7 @@
 			die ("Wrong password or username.");  //log in again
 		}
 		else {
-			echo "Welcome you are logged in.";  //if usename and password is correct logged in
+			echo "Welcome, you are logged in.";  //if usename and password is correct logged in
 			$password="";   //set password to null
 
 		}
@@ -278,7 +278,7 @@
 			
 			
 
-			<p><button >submit</button></p>  <!--submit button  -->
+			<p><button >Submit</button></p>  <!--submit button  -->
 		</form>
 
 
