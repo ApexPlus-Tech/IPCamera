@@ -12,7 +12,7 @@
 		session_unset();
 	}
 	else{
-		$handle = fopen("hiddenfile.txt", "r") or die("couldn,t open\n"); //hiddenfile.txt contains username and password of the user
+		$handle = fopen("/home/pi/hiddenfile.txt", "r") or die("couldn,t open\n"); //hiddenfile.txt contains username and password of the user
 		$actual_username=fgets($handle); //we get actual username
 		$actual_password=fgets($handle); //actual password
 		$password=$_POST['passwd'];      //submitted password
